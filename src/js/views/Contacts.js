@@ -20,9 +20,9 @@ export const Contacts = () => {
 				<div id="contacts" className="panel-collapse collapse show" aria-expanded="true">
 					<ul className="list-group pull-down" id="contact-list">
 						<ContactCard onDelete={() => setState({ showModal: true })} />
-						<ContactCard />
-						<ContactCard />
-						<ContactCard />
+						{/* <ContactCard />
+						<ContactCard /> --> Mostraba cards demás
+						<ContactCard /> */}
 					</ul>
 				</div>
 			</div>

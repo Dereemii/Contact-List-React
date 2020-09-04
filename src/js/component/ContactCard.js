@@ -73,6 +73,13 @@ ContactCard.propTypes = {
 	index: PropTypes.any
 };
 
+/**
+ * Define the default values for
+ * your component's properties
+ **/
 ContactCard.defaultProps = {
 	onDelete: null
+	/* index: 1 */
 };
+
+//onClick={() => /* console.log("pencil") */ actions.getUpdate(contacto)}

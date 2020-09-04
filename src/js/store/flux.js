@@ -22,7 +22,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getUpdate: contacto => {
 				//console.log(contacto.id);
 				const store = getStore();
-				console.log(contacto);
+				//console.log(contacto);
 				const response = fetch("https://assets.breatheco.de/apis/fake/contact/" + contacto, {
 					method: "PUT",
 					body: JSON.stringify({
