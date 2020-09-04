@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import PropTypes from "prop-types";
 
-function EditContact({ match }) {
+function editContact({ match }) {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<div className="container">
 			<div>
-				<h1 className="text-center mt-5">Edit contact data</h1>
+				<h1 className="text-center mt-5">Edit Contact </h1>
 				<form>
 					<div className="form-group">
 						<label>Full Name</label>
@@ -66,8 +66,8 @@ function EditContact({ match }) {
 	);
 }
 
-export default EditContact;
+export default editContact;
 
-EditContact.propTypes = {
+editContact.propTypes = {
 	match: PropTypes.number
 };

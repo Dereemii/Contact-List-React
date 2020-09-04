@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { withRouter } from "react-router-dom";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import MikePhoto from "../../img/m101.jpg";
 import { Context } from "../store/appContext";
@@ -30,10 +29,7 @@ export const ContactCard = props => {
 						<button
 							className="btn"
 							index={index}
-							onClick={
-								() => props.onDelete(actions.getId(store.agendas[index].id))
-								/* actions.getDelete(store.agendas[index].id) */
-							}>
+							onClick={() => props.onDelete(actions.getId(store.agendas[index].id))}>
 							<i className="fas fa-trash-alt" />
 						</button>
 					</div>
